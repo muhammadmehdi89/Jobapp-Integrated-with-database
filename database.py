@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine, text
 import pandas as pd
-db_connection_string = "mysql+pymysql://gllat690w3t6d9hg6y33:pscale_pw_PlbSoJLsjLoc9VgPZcoajO7NPy78dzOzr4ESWm4DgPk@aws.connect.psdb.cloud/muhammadcareers?charset=utf8mb4"
+db_connection_string = "mysql+pymysql://your_username:your_password@your_database_host/your_database_name?charset=utf8mb4"
 engine = create_engine(
     db_connection_string,
     connect_args={
         "ssl" : {
-            "ssl_ca": "/etc/ssl/cert.pem"
+            "ssl_ca": "write ssl from your database: /.../.../......"
         }
     }
 )
